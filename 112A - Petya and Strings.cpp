@@ -6,11 +6,11 @@ int cmpre(string s1, string s2) {
   int ans;
   transform(s1.begin(), s1.end(), s1.begin(),
     [](unsigned char c) {
-      return std::tolower(c);
+      return tolower(c);
     });
   transform(s2.begin(), s2.end(), s2.begin(),
     [](unsigned char c) {
-      return std::tolower(c);
+      return tolower(c);
     });
   ans = s1.compare(s2);
   return ans;
